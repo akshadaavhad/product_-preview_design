@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product preview</title>
+    <style>
+        .main-img{
+            height: 350px;
+            width: 300px;
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #000;
+            background-color: rgb(251, 251, 252);
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 3px 1px rgb(77, 76, 76);
+        }
+        .mainimg{
+            width: 250px;
+            height: 250px;
+            padding: 10px 20px;
+            display: block;
+            margin: 0px auto;
+            width: 200px;
+
+        }
+        .Product-preview{
+            display: flex;
+            justify-content: center;    
+            }
+      .preview{
+        height: 80px ;
+        width: 80px;
+        padding: 10px 20px;
+        object-fit: cover;
+        width: 100px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        margin: 10px;
+
+      }
+    </style>
+</head>
+<body><div class="main-img" >
+    <img src="main-iphone.jpeg"class="mainimg"id="main-image"></div>
+    <div class="Product-preview">
+        <img src="main-iphone.jpeg"class="preview"onclick="changeimg('main-iphone.jpeg')">
+        <img src="two.jpeg" class="preview"onclick="changeimg('two.jpeg')">
+        <img src="three.jpeg" class="preview"onclick="changeimg('three.jpeg')">
+        <img src="four.jpeg" class="preview"onclick="changeimg('four.jpeg')">
+        <img src="five.jpeg" class="preview"onclick="changeimg('five.jpeg')">
+        </div>
+        <script>
+            function changeimg(imgname){
+                const mainimg=document.getElementById('main-image');
+                mainimg.src = imgname;
+            }
+        </script>
+</body>
+</html>
