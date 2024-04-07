@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product preview</title>
     <style>
+          body{
+            background-color: #4697e7;
+            background-image: linear-gradient(62deg, #4697e7 0%, #f50dec 100%);
+
+            min-height: 100vh;
+        }
         .main-img{
             height: 350px;
             width: 300px;
@@ -17,8 +23,8 @@
             box-shadow: 0 0 3px 1px rgb(77, 76, 76);
         }
         .mainimg{
-            width: 250px;
-            height: 250px;
+            width: 50px;
+            height: 300px;
             padding: 10px 20px;
             display: block;
             margin: 0px auto;
@@ -31,10 +37,10 @@
             }
       .preview{
         height: 80px ;
-        width: 80px;
+        width: 100px;
         padding: 10px 20px;
         object-fit: cover;
-        width: 100px;
+        width: 80px;
         border: 1px solid #000;
         border-radius: 5px;
         margin: 10px;
@@ -42,14 +48,15 @@
       }
     </style>
 </head>
-<body><div class="main-img" >
-    <img src="main-iphone.jpeg"class="mainimg"id="main-image"></div>
+<body>
+    
+    <div class="main-img" >
+    <img src="main_cack.avif"class="mainimg"id="main-image"></div>
     <div class="Product-preview">
-        <img src="main-iphone.jpeg"class="preview"onclick="changeimg('main-iphone.jpeg')">
-        <img src="two.jpeg" class="preview"onclick="changeimg('two.jpeg')">
-        <img src="three.jpeg" class="preview"onclick="changeimg('three.jpeg')">
-        <img src="four.jpeg" class="preview"onclick="changeimg('four.jpeg')">
-        <img src="five.jpeg" class="preview"onclick="changeimg('five.jpeg')">
+        <img src="main_cack.avif"class="preview"onclick="changeimg('main_cack.avif')">
+        <img src="one.avif" class="preview"onclick="changeimg('one.avif')">
+        <img src="two.avif" class="preview"onclick="changeimg('two.avif')">
+        <img src="three.avif" class="preview"onclick="changeimg('three.avif')">
         </div>
         <script>
             function changeimg(imgname){
